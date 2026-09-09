@@ -1,0 +1,33 @@
+name: Canva to Wix Daily Re-Sync
+
+on:
+  schedule:
+    # 10:30 AM ET = 14:30 UTC during EDT (Mar–Nov), 15:30 UTC during EST (Nov–Mar)
+    # GitHub Actions cron only supports UTC, so we run both and let the script
+    # no-op outside the correct local hour, OR we adjust this manually twice a year.
+    - cron: '30 14 * * *'   # 10:30 AM EDT
+    - cron: '30 15 * * *'   # 10:30 AM EST
+  workflow_dispatch: {}      # lets you trigger it manually to test
+
+jobs:
+  resync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run re-sync script
+        env:
+          CANVA_CLIENT_ID: ${{ secrets.CANVA_CLIENT_ID }}
+          CANVA_API_KEY: ${{ secrets.CANVA_API_KEY }}
+          WIX_API_KEY: ${{ secrets.WIX_API_KEY }}
+          WIX_SITE_ID: ${{ secrets.WIX_SITE_ID }}
+        run: python resync.py
