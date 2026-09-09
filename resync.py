@@ -65,6 +65,8 @@ def refresh_canva_token():
             "refresh_token": CANVA_REFRESH_TOKEN,
         },
     )
+    if resp.status_code != 200:
+        print(f"Canva token refresh failed ({resp.status_code}): {resp.text}")
     resp.raise_for_status()
     tokens = resp.json()
 
@@ -84,6 +86,8 @@ def refresh_dropbox_token():
             "refresh_token": DROPBOX_REFRESH_TOKEN,
         },
     )
+    if resp.status_code != 200:
+        print(f"Dropbox token refresh failed ({resp.status_code}): {resp.text}")
     resp.raise_for_status()
     return resp.json()["access_token"]
 
@@ -163,6 +167,8 @@ def upload_to_dropbox(dropbox_token, dropbox_path, file_bytes):
         },
         data=file_bytes,
     )
+    if resp.status_code != 200:
+        print(f"Dropbox upload failed ({resp.status_code}): {resp.text}")
     resp.raise_for_status()
     print(f"Uploaded to Dropbox: {dropbox_path} ({len(file_bytes)} bytes)")
     return resp.json()
