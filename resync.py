@@ -88,6 +88,7 @@ DESIGN_MAP = {
 "DAHUovjeXic": "/Wine Sheets/ Viña Tondonia Reserva (White).pdf",
 "DAHUoj29pDo": "/Wine Sheets/ Viña Tondonia Gran Reserva (White).pdf",
 "DAHUnyq7d1g": "/Wine Sheets/ Viña Tondonia Reserva (Rosé).pdf",
+"DAHUn2Q7Tgo": "/Wine Sheets/ Pleret.pdf",
 }
 
 
