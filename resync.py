@@ -55,7 +55,7 @@ DESIGN_MAP = {
 "DAHUn-bu2fc": "/Wine Sheets/ Fot-Li Vermut.pdf",
 "DAHUn-u_NQU": "/Wine Sheets/Mokoroa Txakoli Kimuak.pdf",
 "DAHUoRuJ7Fw": "/Wine Sheets/ Mokoroa Txakoli Rosé.pdf",
-"DAHUoW2h7Gg ": "/Wine Sheets/ Mokoroa Txakoli White.pdf",
+"DAHUoW2h7Gg": "/Wine Sheets/ Mokoroa Txakoli White.pdf",
 "DAHUn61J7BU": "/Wine Sheets/Raventos Basagoiti Inicial.pdf",
 "DAHUoa6Gp0k": "/Wine Sheets/ Raventos Basagoiti Principal.pdf",
 "DAHUn66DIsw": "/Wine Sheets/Frore de Carme.pdf",
