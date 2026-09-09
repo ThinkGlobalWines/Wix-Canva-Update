@@ -2,6 +2,11 @@ name: Canva to Dropbox Daily Re-Sync
 
 on:
   schedule:
+    # 10:30 AM ET = 14:30 UTC during EDT (roughly Mar-Nov), 15:30 UTC during EST (Nov-Mar).
+    # GitHub cron is UTC-only and doesn't adjust for daylight saving on its own,
+    # so both lines are here; each no-ops harmlessly on the "wrong" half of the year
+    # since the script doesn't check the time itself -- it'll just run twice a year
+    # on the transition days. Adjust manually if you want to tighten that up later.
     - cron: '30 14 * * *'
     - cron: '30 15 * * *'
   workflow_dispatch: {}
@@ -30,4 +35,4 @@ jobs:
           DROPBOX_APP_SECRET: ${{ secrets.DROPBOX_APP_SECRET }}
           DROPBOX_REFRESH_TOKEN: ${{ secrets.DROPBOX_REFRESH_TOKEN }}
           GH_PAT: ${{ secrets.GH_PAT }}
-        run: python resync.py
+        run: python -u resync.py
