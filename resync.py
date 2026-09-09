@@ -50,7 +50,7 @@ DESIGN_MAP = {
 "DAHUnwFVc38": "/Wine Sheets/Casal de Armán White",
 "DAHUnzoUFBM": "/Wine Sheets/Fraga Do Corvo Red.pdf",
 "DAHUnwQkU3U": "/Wine Sheets/Fraga do Corvo White.pdf",
-" DAHUn9104xU": "/Wine Sheets/Casal de Arman Red.pdf",
+" DAHUn9104xU": "/Wine Sheets/Casal de Armán Red.pdf",
 " DAHUn546xSg": "/Wine Sheets/Fot-Li Antiga.pdf",
 " DAHUn-bu2fc": "/Wine Sheets/ Fot-Li Vermut.pdf",
 " DAHUn-u_NQU": "/Wine Sheets/Mokoroa Txakoli Kimuak.pdf",
