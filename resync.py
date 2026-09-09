@@ -89,6 +89,17 @@ DESIGN_MAP = {
 "DAHUoj29pDo": "/Wine Sheets/ Viña Tondonia Gran Reserva (White).pdf",
 "DAHUnyq7d1g": "/Wine Sheets/ Viña Tondonia Reserva (Rosé).pdf",
 "DAHUn2Q7Tgo": "/Wine Sheets/ Pleret.pdf",
+"DAG5t6rR360": "/Wine Sheets/ Pérez Pascuas.pdf",
+"DAGykKkukOE": "/Wine Sheets/ Chivite.pdf",
+"DAG5t0F3r1U": "/Wine Sheets/ Fragas do Lecer.pdf",
+"DAG5t7h9Z8U": "/Wine Sheets/ Casal de Armán.pdf",
+"DAG5t_q_VoE": "/Wine Sheets/ Alegre Wine & Spirit.pdf",
+"DAGObAs6LtA": "/Wine Sheets/ R. López de Heredia Viña Tondonia.pdf",
+"DAG5t0z6i2g": "/Wine Sheets/ Frore de Carme.pdf",
+"DAHDfOHe-JM": "/Wine Sheets/ Raventos Basagoiti.pdf",
+"DAGOa4-pGw8": "/Wine Sheets/ Buil & Gine Wine Co..pdf",
+"DAG5t9JKYZM": "/Wine Sheets/ Mokoroa Txakoli.pdf",
+"DAG5twmXX_8": "/Wine Sheets/ Priorat Natur - PRN.pdf",
 }
 
 
